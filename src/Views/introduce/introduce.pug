@@ -1,0 +1,23 @@
+extends ../base.pug
+
+block content 
+    div#controllButtons 
+        a(href="/myHeartToYou/motive") 
+            button#projectMotiveBtn 프로젝트 시작 계기
+        a(href="/myHeartToYou/introduce") 
+            button#projectIntroduceBtn 프로젝트 소개
+        a(href="/myHeartToYou/goal")     
+            button#projectGoalBtn 프로젝트 목표
+    div#projectIntroduce
+        div#projectIntroduceHead
+            h1 프로젝트 소개
+        div#projectIntroduceBody
+            h3 마음 그대로는 내 마음을 100% 빠짐없이 전달하고 싶으신 분들을 위해 시작된 프로젝트 입니다. 
+            br
+            h3 매 달 적립된 후원금을 투명하게 공개하며, 매 달 생계가 어려운 한부모가정, 저소득, 주거빈곤 아이들에게 각각 고루게 분배하여 기부합니다.
+            br
+            h3 기부 시, 해당 후원자의 성함과 첨부한 메시지가 함께 전달되며 매 달 말, 수혜자로부터 답장 메시지를 받게 됩니다.
+            br
+            h3 1인 비영리 단체에 의해 운영되며, 절대 사익을 목적으로 운영하지 않습니다. 
+block scripts 
+    sciprt(src="/clients/project.js")

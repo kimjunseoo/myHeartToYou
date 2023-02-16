@@ -1,0 +1,22 @@
+extends ../base.pug
+
+block content 
+    div#controllButtons 
+        a(href="/myHeartToYou/motive") 
+            button#projectMotiveBtn 프로젝트 시작 계기
+        a(href="/myHeartToYou/introduce") 
+            button#projectIntroduceBtn 프로젝트 소개
+        a(href="/myHeartToYou/goal")     
+            button#projectGoalBtn 프로젝트 목표
+    div#projectGoal
+        div#projectGoalHead
+            h1 프로젝트 목표
+        div#projectGoalBody
+            h3 1. 모든 후원금을 100% 빠짐없이 기부하는 문화를 이끌어 나갑니다. 
+            h4  - 모든 후원금 기부 내역은 투명하게 공개합니다.
+            h3 2. 가슴 아픈 사연을 상품으로 만들어 판매하는 문화를 지양합니다.
+            h4  - 사연을 가공하여 후원을 유도하지 않습니다.
+            h3 3. 수혜자의 개인 사생활을 존중합니다. 
+            h4  - 수혜자의 후원금 사용 내역  을 증빙 요구하지 않습니다.
+block scripts 
+    sciprt(src="/clients/project.js")

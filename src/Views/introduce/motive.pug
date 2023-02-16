@@ -1,0 +1,20 @@
+extends ../base.pug
+
+block content 
+    div#controllButtons 
+        a(href="/myHeartToYou/motive") 
+            button#projectMotiveBtn 프로젝트 시작 계기
+        a(href="/myHeartToYou/introduce") 
+            button#projectIntroduceBtn 프로젝트 소개
+        a(href="/myHeartToYou/goal")     
+            button#projectGoalBtn 프로젝트 목표
+    div#projectMotive
+        div#projectMotiveHead
+            h1 프로젝트 시작 계기
+        div#projectMotiveBody
+            h3 이 프로젝트는 John Carmack의 팟캐스트 대화에서 영감을 받았습니다.
+            h3  "The top level metric should be that you’re building things of value. ... i fundamentally do think that’s how you make the world a better place. If you have given more value to people"
+            br
+            h3 또한, 자신의 마음이 온전히 전달되지 못하고 일부만 전달되는 것을 원하지 않는 분들을 위해 시작되었습니다.
+block scripts 
+    sciprt(src="/clients/project.js")
