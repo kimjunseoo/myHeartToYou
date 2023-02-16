@@ -1,0 +1,19 @@
+extends base.pug 
+
+block content 
+    div 
+        form(method="POST")
+            label(for="") 이름 
+            input(type="text", required, name="patronName", minlength="2", maxlength="5", placeholder="이름을 입력해주세요")    
+            label(for="") 생년월일
+            input(type="type", required, name="patronBirthDate", placeholder="ex) 20020905", maxlength="8", minlength="8")
+            label(for="") 아이디
+            input(type="text", required, name="patronId", placeholder="아이디를 입력해주세요")
+            label(for="") 비밀번호
+            input(type="password", required, name="patronPassword", placeholder="비밀번호를 입력해주세요")
+            input(type="password", required, name="patronPasswordAuth", placeholder="입력하신 비밀번호를 다시 입력해주세요")
+            label(for="") 이메일 주소
+            input(type="email", required, name="patronEmail", placeholder=" 이메일 주소를 입력해주세요")
+            button(type="submit") 확인
+
+

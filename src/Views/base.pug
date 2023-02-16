@@ -4,18 +4,26 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css")
         title 마음 그대로
     body 
         header 
             a(href="/") 
                 h2 마음 그대로
+        hr
         nav 
             a(href="/myHeartToYou/introduce")
                 h2 소개 
-            a(href="")
+            a(href="/spon")
                 h2 후원하기
             a(href="")
                 h2 개발자 후원하기 
+            hr
+            a(href="/login")
+                h2 로그인
+            a(href="/join")
+                h2 회원가입
+            hr
         main 
             block content 
             block scripts

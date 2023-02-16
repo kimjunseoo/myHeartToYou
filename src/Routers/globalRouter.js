@@ -1,8 +1,10 @@
 import exrpess from "express";
-import { getHome } from "../Controllers/globalController";
+import { getHome, getJoin, getLogin } from "../Controllers/globalController";
 
 const globalRouter = exrpess.Router();
 
 globalRouter.get("/", getHome);
+globalRouter.get("/login", getLogin);
+globalRouter.get("/join", getJoin);
 
 export default globalRouter;
